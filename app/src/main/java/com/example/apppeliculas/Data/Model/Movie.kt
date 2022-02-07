@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 data class MoviesDataJson(
     val id: Int = -1,
     val adult: Boolean = false,
-    val backdrop_path: String = "",
+    val backdrop_path: String? = null ,
     val original_language: String = "",
     val overview: String = "",
     val popularity: Double = -1.0,
@@ -30,7 +30,7 @@ data class MoviesDataEntity(
     @ColumnInfo(name = "adult")
     val adult: Boolean = false,
     @ColumnInfo(name = "backdrop_path")
-    val backdrop_path: String = "",
+    val backdrop_path: String? = null,
     @ColumnInfo(name = "original_language")
     val original_language: String = "",
     @ColumnInfo(name = "overview")

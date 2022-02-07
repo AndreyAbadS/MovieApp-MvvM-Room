@@ -87,7 +87,7 @@ class MovieFrangment : Fragment(R.layout.fragment_movie_frangment),
     override fun onMovieClick(movie: MoviesDataJson) {
         val Action = MovieFrangmentDirections.actionMovieFrangmentToMovieDetailFragment(
             movie.poster_path,
-            movie.backdrop_path,
+            movie.backdrop_path!!,
             movie.vote_average.toFloat(),
             movie.vote_count,
             movie.overview,
