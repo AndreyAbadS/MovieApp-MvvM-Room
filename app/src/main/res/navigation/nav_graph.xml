@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/movieFrangment">
+
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.example.apppeliculas.ui.moviedetails.MovieDetailFragment"
+        android:label="fragment_movie_detail"
+        tools:layout="@layout/fragment_movie_detail" >
+        <argument android:name="posterImageUrl"
+            app:argType="string" />
+        <argument
+            android:name="BackImageUrl"
+            app:argType="string" />
+        <argument android:name="voteAvarage"
+            app:argType="float" />
+        <argument android:name="voteCount"
+            app:argType="integer" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="tittle"
+            app:argType="string" />
+        <argument
+            android:name="lenguage"
+            app:argType="string" />
+        <argument
+            android:name="relaseDate"
+            app:argType="string" />
+        <argument
+            android:name="popularity"
+            app:argType="float" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieFrangment"
+        android:name="com.example.apppeliculas.ui.movie.MovieFrangment"
+        android:label="fragment_movie_frangment"
+        tools:layout="@layout/fragment_movie_frangment" >
+        <action
+            android:id="@+id/action_movieFrangment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
+</navigation>
