@@ -14,9 +14,9 @@ import com.example.apppeliculas.presentation.ContactsViewModel
 
 class BlankFragment : Fragment(R.layout.fragment_add_contacts) {
     private lateinit var binding: FragmentAddContactsBinding
-    private val viewModel by  viewModels<ContactsViewModel> {
-        ContactsViewModel.ContactsViewModelFactory(contactsRepositoryImpl(ContactsDataSource()))
-    }
+    //private val viewModel by  viewModels<ContactsViewModel> {
+       // ContactsViewModel.ContactsViewModelFactory(contactsRepositoryImpl(ContactsDataSource()))
+    //}
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentAddContactsBinding.bind(view)
