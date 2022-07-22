@@ -1,4 +1,4 @@
-package com.example.apppeliculas.Data.Local
+package com.example.apppeliculas.Data.Local.movieapp
 
 import androidx.room.Dao
 import androidx.room.Insert

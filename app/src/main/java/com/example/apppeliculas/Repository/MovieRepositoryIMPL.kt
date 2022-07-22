@@ -1,7 +1,7 @@
 package com.example.apppeliculas.Repository
 
 import com.example.apppeliculas.Core.internetCheck
-import com.example.apppeliculas.Data.Local.LocalMovieDataSource
+import com.example.apppeliculas.Data.Local.movieapp.LocalMovieDataSource
 import com.example.apppeliculas.Data.Model.MovieListResult
 import com.example.apppeliculas.Data.Model.toMovieEntity
 import com.example.apppeliculas.Data.Remote.RemoteMovieDataSource

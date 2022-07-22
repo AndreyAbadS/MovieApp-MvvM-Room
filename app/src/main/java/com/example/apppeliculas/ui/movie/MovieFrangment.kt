@@ -12,8 +12,8 @@ import com.example.apppeliculas.Adapters.Concats.PlayingNowConcatAdapter
 import com.example.apppeliculas.Adapters.Concats.PopularConcatAdapter
 import com.example.apppeliculas.Adapters.MovieAdapter
 import com.example.apppeliculas.Core.Resource
-import com.example.apppeliculas.Data.Local.AppDataBase
-import com.example.apppeliculas.Data.Local.LocalMovieDataSource
+import com.example.apppeliculas.Data.Local.movieapp.AppDataBase
+import com.example.apppeliculas.Data.Local.movieapp.LocalMovieDataSource
 import com.example.apppeliculas.Data.Model.MoviesDataJson
 import com.example.apppeliculas.Data.Remote.RemoteMovieDataSource
 import com.example.apppeliculas.R

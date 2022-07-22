@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/movieFrangment">
+    app:startDestination="@id/mainFragment">
 
     <fragment
         android:id="@+id/movieDetailFragment"
@@ -44,4 +44,30 @@
             android:id="@+id/action_movieFrangment_to_movieDetailFragment"
             app:destination="@id/movieDetailFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.apppeliculas.ui.mainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_movieFrangment"
+            app:destination="@id/movieFrangment" />
+        <action
+            android:id="@+id/action_mainFragment_to_contactsFragment"
+            app:destination="@id/contactsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.example.apppeliculas.ui.contacts.ContactsFragment"
+        android:label="fragment_contacts"
+        tools:layout="@layout/fragment_contacts" >
+        <action
+            android:id="@+id/action_contactsFragment_to_contactsDetailFragment"
+            app:destination="@id/contactsDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactsDetailFragment"
+        android:name="com.example.apppeliculas.ui.contacts.ContactsDetailFragment"
+        android:label="fragment_contacts_detail"
+        tools:layout="@layout/fragment_contacts_detail" />
 </navigation>

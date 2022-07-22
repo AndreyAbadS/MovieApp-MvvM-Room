@@ -1,4 +1,4 @@
-package com.example.apppeliculas.Data.Local
+package com.example.apppeliculas.Data.Local.movieapp
 
 import android.content.Context
 import androidx.room.Database
